@@ -5,51 +5,24 @@
   </head>
   <body>
   <?php
-  if( $_GET["palabra"] || $_GET["origen"] || $_GET["destino"]){
-    translate($_GET["origen"],$_GET["destino"],$_GET["palabra"]);
-  }
-    function translate($origen, $destino, $palabras){   $español = 'es';
-      $ingles = 'en';
-      $portuges = 'pt';
-      $italiano = 'it';
-      $array = array('español', 'inglés', 'portugués', 'italiano');
-      $traduccion = "xd";
-      $indice = 0;
-      $indice2 = 0;
-      $mflag = false;
-      $mensaje = "msj temporal";
-      if(($fp=fopen("diccionario.csv", "r"))!==FALSE){
-        while (($datos = fgetcsv($fp))!==FALSE){
-          $numero = count($datos);
-          for($i=0; $i<$numero; $i++){
-            if($datos[$i]==$origen){
-            $indice = $i;
-          }
-          if($datos[$i]==$destino){
-            $indice2 = $i; 
-          }
-          }
-          if($datos[$indice]==$palabras){
-            $traduccion = $datos[$indice2];
-            $mflag=true;
-          }
-          }
-        fclose($fp);
-      }
+  require_once ('vendor/autoload.php');
+  use \Statickidz\GoogleTranslate;
 
-      if($mflag){
-        $mensaje=$traduccion;
-      }else{
-        $mensaje = "No coincide el idioma con la palabra";
-      }
-      echo $mensaje;
-      return $mensaje;      
-    }
+
+echo $result;
+  if( $_GET["palabra"] || $_GET["origen"] || $_GET["destino"]){
+    $source = $_GET["origen"];
+    $target = $_GET["destino"];
+    $text = $_GET["palabra"];
+    $trans = new GoogleTranslate();
+    $result = $trans->translate($source, $target, $text);
+    echo $result;
+  }
+
   ?> 
   <br>
   <form action="formulario.php">
   <button type="submit">Volver</button>
   </form>
-
   </body>
 </html>

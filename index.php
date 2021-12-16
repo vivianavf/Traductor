@@ -4,7 +4,8 @@
   </head>
   <body>
     <?php
-    include 'formulario.php'
+    require_once 'formulario.php';
     ?> 
   </body>
 </html>
+

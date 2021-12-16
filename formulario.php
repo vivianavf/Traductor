@@ -36,78 +36,20 @@
       </select></td>
     </tr>
 
-    <tr>
-     <td><input type="text" class="rounded" id="palabra" name="palabra"></td>
-    </tr>
-    </table>
-    <br>
-    <button type="submit">Traducir</button>
-    </form>
+      <tr>
+      <td><input type="text" class="rounded" id="palabra" name="palabra"></td>
+      </tr>
+
+      </table>
+
+      <br>
+      
+      <button type="submit">Traducir</button>
+      </form>
       </td>
 
     </tr>
-
-    </table>
-
-    <form action='add.php' method='GET'>
-    <table class="round_table">
-    <caption>¡Añade una nueva palabra!</caption>
-    <tr>
-      <td>
-      <figure>
-      <img src="https://cdn.countryflags.com/thumbs/spain/flag-round-250.png" width="25" height="25"/>
-      <figcaption>Español</figcaption>
-      </figure>      
-      </td>
-
-      <td>
-      <figure>
-      <img src="https://img.icons8.com/fluency/48/000000/portugal-circular.png" width="25" height="25"/>
-      <figcaption>Português</figcaption>
-      </figure>
-      </td>
-
-      <td>
-      <figure>
-      <img src="https://img.icons8.com/fluency/48/000000/great-britain-circular.png" width="25" height="25"/>
-      <figcaption>English</figcaption>
-      </figure>
-      </td>
-
-      <td>
-      <figure>
-      <img src="https://img.icons8.com/fluency/48/000000/italy-circular.png" width="25" height="25"/>
-      <figcaption>Italiano</figcaption>
-      </figure>
-      </td>
-    </tr>
-
-    <tr>
-     <td>
-     <input class="rounded" type="text" id="español" name="español">
-     </td>
-
-     <td>
-     <input class="rounded" type="text" id="portugues" name="portugues">
-     </td>
-
-     <td>
-     <input class="rounded" type="text" id="ingles" name="ingles">
-     </td>
-
-     <td>
-     <input class="rounded" type="text" id="italiano" name="italiano">
-     </td>
-
-    </tr>
-    </table>
-    <br>
-    <button class="rounded" type="submit">Añadir</button>   
-
-    </form>
-    
-    
-    
+    </table>   
   </body>
 
 </html>
