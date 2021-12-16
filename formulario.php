@@ -13,8 +13,9 @@
 
       <td>
       <form action='translate.php' method='GET'>
-    <table class="round_table">
-    <tr>
+      <table class="round_table">
+      <tr>
+      
       <td><select class="rounded" name="origen">
       <option value ="es">Español</option>
       <option value ="en">English</option>
