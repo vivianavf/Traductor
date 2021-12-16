@@ -1,0 +1,43 @@
+body{
+  background-color: ghostwhite;
+  font-family: Optima;
+  font-size: 115%;
+}
+
+p{
+  color: steelblue;
+  font-size: 150%;
+  font-family: Optima;
+}
+
+.divisor{
+  background-color: ghostwhite;
+}
+
+table{
+  background-color: gainsboro;
+  padding: 10px;
+  margin: 20px;
+}
+
+button{
+  background-color: cornflowerblue;
+  border: none;
+  color: white;
+  text-align: center;
+}
+
+.rounded{
+    border-radius: 10px;
+}
+
+.round_table {                   
+            border-collapse: separate;
+            border-spacing: 10;
+            border: 1px solid silver;
+            border-radius: 15px;
+            -moz-border-radius: 20px;
+            padding: 2px;
+            -webkit-border-radius: 5px;
+        }
+
