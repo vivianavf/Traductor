@@ -1,7 +1,6 @@
 <html>
   <head>
-    <link rel="stylesheet" href="styles.css">
-    <! -- <img src="https://img.icons8.com/external-wanicon-lineal-color-wanicon/64/000000/external-language-communication-wanicon-lineal-color-wanicon.png"/>    
+    <link rel="stylesheet" href="styles.css">  
     
   </head>
   <body>
